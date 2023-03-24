@@ -872,7 +872,7 @@ button{
 
     .footer__row{
         flex-basis: 75%;
-        grid-template-columns: repeat(auto-fit, 250px);
+        grid-template-columns: repeat(auto-fit, 200px);
     }
 
 }
