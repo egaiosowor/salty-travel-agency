@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Salty</title>
+
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <!-- GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins&family=Sen:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- SWIPER-JS CSS STYLESHEET -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- MAIN CSS STYLESHEET -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- WEBPAGE NAVIGATION -->
+    <header>
+        <nav class="nav container">
+            <a class="nav__logo" href="#">
+                <img src="images/Logo.png" alt="Salt logo">
+            </a>
+            <ul class="nav__list hide-for-mobile">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Destinations</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Tours</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+            </ul>
+            <a href="#!" class="btn hide-for-mobile" data-value="outline">Book Now
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 8.45744L4.04598 10.2128L13.4253 2.87235L6.06897 11.1702V15L8.82758 11.9681L13.4253 13.5638L16 0L0 8.45744Z" fill="currentColor"/>
+                </svg>
+            </a>
+            <div id="mobileMenu" class="mobile-menu is-hidden">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Home</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">About Us</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Menu</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Contact Us</a></li>
+                </ul>
+                <hr class="divider">
+                <a href="#!" class="btn" data-value="outline">Book Now
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8.45744L4.04598 10.2128L13.4253 2.87235L6.06897 11.1702V15L8.82758 11.9681L13.4253 13.5638L16 0L0 8.45744Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+            <a href="#" id="hamburger" class="hamburger hide-for-desktop">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero container">
+            <div class="hero__data">
+                <h1 class="hero__title">Discover the Best Lovely Places</h1>
+                <p class="hero__description">Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration from us.</p>
+                <a href="#!" class="btn" type='button' data-value="outline">Book Now
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8.45744L4.04598 10.2128L13.4253 2.87235L6.06897 11.1702V15L8.82758 11.9681L13.4253 13.5638L16 0L0 8.45744Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero__img">
+                <img src="images/hero-image.png" alt="">
+            </div>
+        </section>
+
+        <!-- CATEGORIES SECTION -->
+        <section class="categories container">
+            <div class="categories__data">
+                <h2 class="categories__title title">Categories</h2>
+                <p class="categories__description">Here are lots of interesting destinations to visit, but don't be confused-they're already grouped by category.</p>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+            </div>
+
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="swiper-slide category-card">
+                            <img src="images/Beach.png" alt="">
+                            <span>Beach</span>
+                        </div>
+                        <div class="swiper-slide category-card">
+                            <img src="images/Desert.png" alt="">
+                            <span>Desert</span>
+                        </div>
+                        <div class="swiper-slide category-card">
+                            <img src="images/Mountain.png" alt="">
+                            <span>Mountain</span>
+                        </div>
+                        <div class="swiper-slide category-card">
+                            <img src="images/Temple.png" alt="">
+                            <span>Temple</span>
+                        </div>
+                        <div class="swiper-slide category-card">
+                            <img src="images/Tower.png" alt="">
+                            <span>Tower</span>
+                        </div>
+                        <div class="swiper-slide category-card">
+                            <img src="images/Pyramid.png" alt="">
+                            <span>Pyramid</span>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS SECTION -->
+        <section class="stats container">
+            <div class="stats__img">
+                <img src="images/stats.png" alt="">
+            </div>
+            <div class="stats__data">
+                <span class="stats__label">Our Experiences</span>
+                <h2 class="stats__title title">Our Stories Have Adventures</h2>
+                <p class="stats__description">We are experienced in bringing adventures to stay their journey, with all outdoor destinations in the world as our specialties. Start your adventure now! Nature has already called you!</p>
+                <ul class="stats__metrics">
+                    <li>
+                        <h3>12k+</h3>
+                        <p>Success Journey</p>
+                    </li>
+                    <li>
+                        <h3>16+</h3>
+                        <p>Awards Winning</p>
+                    </li>
+                    <li>
+                        <h3>20+</h3>
+                        <p>Years Of Experience</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- BOOK DESTINATION SECTION -->
+        <section class="book container">
+            <div class="book__data">
+                <h2 class="book__title title">Find Popular Destination</h2>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>    
+            </div>
+            
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="swiper-slide book-card">
+                            <img src="images/mountain-hiking-tour.png" alt="">
+                            <div class="book-card__data">
+                                <h3 class="book-card__title">Mountain Hiking Tour</h3>
+                                <p class="book-card__description">Mountain Hiking Tour</p>
+                                <div class="book-card__price-group">
+                                    <h4 class="book-card__price">$89<span> /person</span></h4>
+                                    <button class="btn">Book Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide book-card">
+                            <img src="images/machu-picchu-peru.png" alt="">
+                            <div class="book-card__data">
+                                <h3 class="book-card__title">Machu Picchu, Peru</h3>
+                                <p class="book-card__description">Machu Picchu, Peru</p>
+                                <div class="book-card__price-group">
+                                    <h4 class="book-card__price">$99<span> /person</span></h4>
+                                    <button class="btn">Book Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide book-card">
+                            <img src="images/grand-canyon-arizona.png" alt="">
+                            <div class="book-card__data">
+                                <h3 class="book-card__title">Grand Canyon, Arizona</h3>
+                                <p class="book-card__description">Mountain Hiking Tour</p>
+                                <div class="book-card__price-group">
+                                    <h4 class="book-card__price">$70<span> /person</span></h4>
+                                    <button class="btn">Book Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide book-card">
+                            <img src="images/rome-italy.png" alt="">
+                            <div class="book-card__data">
+                                <h3 class="book-card__title">Rome, Italy</h3>
+                                <p class="book-card__description">Mountain Hiking Tour</p>
+                                <div class="book-card__price-group">
+                                    <h4 class="book-card__price">$99<span> /person</span></h4>
+                                    <button class="btn">Book Now</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FIND DESTINATIONS SECTION -->
+        <section class="destinations container">
+            <div class="destinations__data">
+                <h2 class="destinations__title title">Top Destinations</h2>
+                <p class="destinations__description">Sost Brilliant reasons Entrada should be your one-stop-shop</p>
+                <div class="destinations__buttons">
+                    <button class="btn">London</button>
+                    <button class="btn">Bangkok</button>
+                    <button class="btn">England</button>
+                    <button class="btn">Singapore</button>
+                    <button class="btn">Italy</button>
+                </div>
+            </div>
+            <div class="destinations___container">
+                <div data-value="card-01" class="destination-card ">
+                    <label for="rating">3.5</label>
+                    <div>
+                        <h4>Vientnam</h4>
+                        <p>Worefall</p>
+                    </div>
+                </div>
+                <div data-value="card-02" class="destination-card ">
+                    <label for="rating">3.5</label>
+                    <div>
+                        <h4>Vientnam</h4>
+                        <p>Worefall</p>
+                    </div>
+                </div>
+                <div data-value="card-03" class="destination-card ">
+                    <label for="rating">3.5</label>
+                    <div>
+                        <h4>Vientnam</h4>
+                        <p>Worefall</p>
+                    </div>
+                </div>
+                <div data-value="card-04" class="destination-card ">
+                    <label for="rating">3.5</label>
+                    <div>
+                        <h4>Vientnam</h4>
+                        <p>Worefall</p>
+                    </div>
+                </div>
+                <div data-value="card-05" class="destination-card ">
+                    <label for="rating">3.5</label>
+                    <div>
+                        <h4>Vientnam</h4>
+                        <p>Worefall</p>
+                    </div>
+                </div>
+                <div data-value="card-06" class="destination-card ">
+                    <label for="rating">3.5</label>
+                    <div>
+                        <h4>Vientnam</h4>
+                        <p>Worefall</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIAL SECTION -->
+        <section class="testimonial container">
+            <div class="testimonial__img">
+                <img src="images/testimonial.png" alt="">
+            </div>
+            <div class="testimonial__data">
+                <h2 class="testimonial__title title">A Customer Said About Us:</h2>
+                <article class="testimonial__card">
+                    <p>Salty helped me a lot in finding the best place for our first outdoor adventure trip. They responded very quickly and gave me a detailed account of the place—its history, as well as its best features.</p>
+                    <img src="images/Star.png" alt="Rating">
+                    <h4>Andrew Sarma</h4>
+                    <p>Enterpreneur</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER SECTION -->
+        <section class="newsletter container">
+            <div class="newsletter__data">
+                <h2 class="newsletter__title">Sign up to our newsletter</h2>
+                <p class="newsletter__description">Receive latest news, update, and many other things every week. </p>
+                <form class="newsletter__form">
+                    <input type="email" placeholder="Enter Your email address">
+                    <button type='button'>
+                        <svg width="19" height="17" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 8.45744L4.04598 10.2128L13.4253 2.87235L6.06897 11.1702V15L8.82758 11.9681L13.4253 13.5638L16 0L0 8.45744Z" fill="currentColor"/>
+                        </svg>
+                            
+                    </button>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer container">
+        <div class="footer__container">
+            <div class="footer__brand">
+                <a href="#!">
+                    <img src="images/Logo.png" alt="">
+                </a>
+                <p>Enjoy the touring with Salty</p>
+            </div>
+            <div class="footer__row">
+                <div class="footer__col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Download </a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Guide Book</a></li>
+                        <li><a href="#">App Directory</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Travellers</h4>
+                    <ul>
+                        <li><a href="#">Why Travellers</a></li>
+                        <li><a href="#">Enterprice</a></li>
+                        <li><a href="#">Customer Stories</a></li>
+                        <li><a href="#">Instagram post</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Travelling</a></li>
+                        <li><a href="#">About Location</a></li>
+                        <li><a href="#">Success</a></li>
+                        <li><a href="#">Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Get App</h4>
+                    <ul>
+                        <li><a href="#">App Store</a></li>
+                        <li><a href="#">Play Store</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+    <!-- SWIPER-JS SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <!-- MAIN-JS SCRIPT -->
+    <script src="js/main.js"></script>
+</body>
+</html>
